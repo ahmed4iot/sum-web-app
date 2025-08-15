@@ -2,74 +2,51 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تطبيق جمع رقمين</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      background: #f2f2f2;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      direction: rtl;
-    }
-    .container {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    input {
-      margin: 10px;
-      padding: 10px;
-      width: 80%;
-      font-size: 16px;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #2196F3;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #1976D2;
-    }
-    .result {
-      margin-top: 20px;
-      font-size: 18px;
-      color: green;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>شركة NCTC للمقاولات</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h2>تطبيقااتاتاتاتا جمع رقمين</h2>
-    <input type="number" id="num1" placeholder="أدخل الرقمنننننننن الأول">
-    <br>
-    <input type="number" id="num2" placeholder="أدخل الرقم الثاني">
-    <br>
-    <button onclick="calculateSum()">احسب</button>
-    <div class="result" id="result"></div>
-  </div>
+  <header>
+    <h1>شركة NCTC للمقاولات</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#about">من نحن</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <script>
-    function calculateSum() {
-      const num1 = parseFloat(document.getElementById('num1').value);
-      const num2 = parseFloat(document.getElementById('num2').value);
-      const resultDiv = document.getElementById('result');
+  <section id="home">
+    <h2>مرحبًا بكم في NCTC</h2>
+    <p>شركة متخصصة في المقاولات العامة والإنشاءات بأعلى جودة واحترافية.</p>
+  </section>
 
-      if (!isNaN(num1) && !isNaN(num2)) {
-        const sum = num1 + num2;
-        resultDiv.textContent = `المجموع: ${sum}`;
-      } else {
-        resultDiv.textContent = 'يرجى إدخال رقمين صالحين';
-      }
-    }
-  </script>
+  <section id="services">
+    <h2>خدماتنا</h2>
+    <ul>
+      <li>بناء المنازل والفلل</li>
+      <li>إدارة المشاريع</li>
+      <li>الترميم والصيانة</li>
+      <li>البنية التحتية</li>
+    </ul>
+  </section>
+
+  <section id="about">
+    <h2>من نحن</h2>
+    <p>شركة NCTC تأسست عام 20XX بخبرة تزيد عن 10 سنوات في مجال المقاولات، وتلتزم بأعلى معايير الجودة والالتزام.</p>
+  </section>
+
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>📞 0501234567</p>
+    <p>📧 info@nctc.com</p>
+  </section>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; NCTC 2025</p>
+  </footer>
 </body>
 </html>
